@@ -1,0 +1,254 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+ 
+}
+
+
+/* *****************decorating the nav bar*************** */
+
+.navbar{
+  background-color: #689F38;
+margin-bottom: 5rem !important;
+}
+/* .navbar  */
+.navbar-brand{
+  font-size:3.1rem !important;
+  margin-left: 5rem !important;
+  
+}
+
+
+/* **************** decorating card in writenote component ************ */
+.note-space{
+  margin-bottom: 5rem !important;
+}
+.note-space-card{
+  width:37vw;
+  border-radius: .5rem !important;
+}
+
+
+.note-space-title input{
+  width:100%;
+  height: 6rem !important;
+  padding: 1rem .5rem !important;
+  font-size: 2.5rem !important;
+  font-weight: 600;
+  letter-spacing: .1rem !important;
+  color: black !important;
+  outline: none !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.note-space-text textarea{
+  font-size: 1.6rem !important;
+  border: none !important;
+  outline: none !important;
+  width:100%;
+  letter-spacing: .1rem !important;
+}
+
+
+.note-space-btn{
+
+  width: 100% !important;
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+}
+
+.note-space-btn i{
+  
+color: #689F38 !important;
+text-align: right !important;
+} 
+
+
+/* ************ decorating add-node component card ************** */
+
+
+.add-note-card{
+  width: 30rem !important;
+  height: 18rem !important;
+  margin-bottom: 2rem !important;
+  margin-left: 3rem !important;
+}
+.add-note-title{
+  height: 5rem;
+  line-height: 2.7rem !important;
+  letter-spacing: .1rem !important;
+  font-size: 2rem !important;
+  margin-bottom: .5rem !important;
+  overflow-y:auto;
+}
+
+.add-note-text{
+  height: 7rem;
+  letter-spacing: .1rem !important;
+  font-size: 1.6rem !important;
+  color: rgba(0, 0, 0, 0.767);
+  overflow-y: auto;
+}
+/* 
+***************footer component ************ */
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+
+
+/* ################################# media query for portrait mode ########################################### */
+
+ @media(max-width:458px){
+  
+  /* *************navbar********************** */
+  .navbar-brand{
+    font-size:2.7rem !important;
+    margin-left: 5rem !important;
+    
+  }
+  
+  /* ********************** write note ************ */
+  .note-space-card{
+    width:90vw !important;
+  }
+
+  /* ******* add notes ********* */
+
+.add-note-container{
+ padding: 0 auto;
+
+}
+.add-note-card{
+  width: 70vw !important;
+  height: 18rem !important;
+  margin-bottom: 3rem !important; 
+ margin-left: 0 !important;
+}
+
+}
+
+
+
+
+/* ################################ media query for extra small screen size ############################## */
+
+@media (min-width:459px) and (max-width:576px){
+
+   /* ********************** write note ************ */
+   .note-space-card{
+    width:90vw !important;
+  }
+  .add-note-card{
+    width: 62vw !important;
+    height: 18rem !important;
+    margin-bottom: 2rem !important; 
+   margin-left: 0 !important;
+  }
+}
+
+
+
+
+/* ################################ media query for small screen size ############################## */
+@media (min-width:577px) and (max-width:767px){
+
+  /* ********************** write note ************ */
+  .note-space-card{
+   width:80vw !important;
+   height: 33vh !important;
+ }
+
+   /* ********************** add note ************ */
+ .add-note-card{
+   width: 60vw !important;
+   height: 20rem !important;
+   margin-bottom: 2rem !important; 
+  margin-left: 0!important;
+ }
+ .note-space-text {
+  height: 45% !important;
+}
+.note-space-text textarea{
+  height: 100% !important;
+}
+}
+
+/*
+################################ media query for medium screen size ##############################*/
+
+@media (min-width:768px) and (max-width:991px){
+  .note-space-card{
+    width:60vw;
+  }
+     /* ********************** add note ************ */
+  .add-note-card{
+    width: 40vw !important;
+    height: 18rem !important;
+
+   margin:0 0 3.5rem 2rem !important
+ 
+  }
+}
+
+/*################################ media query for large screen size ##############################*/
+
+@media (min-width:992px) and (max-width:1200px){
+
+  .note-space-card{
+    width:50vw;
+    border-radius: .5rem !important;
+  }
+ 
+}
+
+
+/* #################### media query for landscape mode ###################### */
+
+@media(orientation:landscape) and (max-height:500px) {
+
+/* **************navbar************* */
+.navbar-brand{
+  font-size:2.5rem !important;
+  margin-left: 5rem !important;
+  
+}
+  /* ******************note space******************* */
+  .note-space{
+    margin-bottom: 4rem ;
+  }
+  .note-space-card{
+   height:62vh !important;  
+  }
+  .note-space-title input{
+ 
+    font-size: 2.2rem !important;
+  }
+  
+.note-space-text textarea{
+  font-size: 1.6rem !important;
+}
+
+/* ***********************add-note-card********* */
+.add-note-card{
+  width: 30rem !important;
+  height: 17.2rem !important;
+  margin-bottom: 2rem !important;
+  margin-left: 3rem !important;
+}
+
+}
